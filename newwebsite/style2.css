@@ -1,0 +1,157 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    background-color: #f5f5f5;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.about-text h2 {
+    color: #333;
+    font-size: 2em;
+}
+
+/* Songs Section */
+#songs {
+    text-align: center;
+    padding: 50px;
+}
+
+#songs h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Scroll Container for horizontal scrolling */
+.scroll-container {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+/* Horizontal layout for song cards */
+.songs-grid {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.song-card {
+    min-width: 250px;
+    flex-shrink: 0;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.song-card h4 {
+    color: #555;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.song-card p {
+    color: #666;
+    margin-top: 0.5em;
+}
+
+.song-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Full Description Section */
+#full-description {
+    padding: 50px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+#full-description h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.description-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Song Descriptions */
+.song-description {
+    margin-bottom: 30px;
+}
+
+.song-description h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.song-description p {
+    margin-top: 0.5em;
+}
+
+/* Audio Player */
+.audio-player {
+    margin-top: 1em;
+}
+
+audio {
+    width: 100%;
+    outline: none;
+}
+.description {
+    display: none; /* Hide descriptions initially */
+    margin-top: 10px; /* Add some space above the description */
+    color: #666; /* Change text color if needed */
+}
